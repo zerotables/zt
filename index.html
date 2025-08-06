@@ -1,481 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
+  <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17398552850"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17398552850"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'AW-17398552850');
-</script>
-
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'AW-17398552850');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZEROTABLES - Only Sattvik</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-    /* Basic Reset & Body Styles */
-    body {
+      /* Basic Reset & Body Styles */
+      body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background-color: #f8f8f8; /* Light background for the overall page */
-    }
+        background-color: #f8f8f8;
+        /* Light background for the overall page */
+      }
 
-    /* Header/Navigation Bar - UPDATED */
-    .navbar {
+      /* Header/Navigation Bar - UPDATED */
+      .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 15px 50px;
-        background-color: #ffffff; /* Updated to new color */
-        color: #333; /* Changed text color for better contrast with light background */
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        position: sticky; /* Make it sticky */
-        top: 0; /* Stick to the top */
-        z-index: 1000; /* Ensure it stays on top of other content */
-    }
+        background-color: #ffffff;
+        /* Updated to new color */
+        color: #333;
+        /* Changed text color for better contrast with light background */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        position: sticky;
+        /* Make it sticky */
+        top: 0;
+        /* Stick to the top */
+        z-index: 1000;
+        /* Ensure it stays on top of other content */
+      }
 
-    .navbar .logo img {
-        height: 50px; /* Adjust as needed */
-    }
+      .navbar .logo img {
+        height: 50px;
+        /* Adjust as needed */
+      }
 
-    .navbar .nav-links a {
-        color: #333; /* Changed text color for better contrast */
+      .navbar .nav-links a {
+        color: #333;
+        /* Changed text color for better contrast */
         text-decoration: none;
         margin-left: 30px;
         transition: color 0.3s ease;
-    }
+      }
 
-    .navbar .nav-links a:hover {
-        color: #555; /* Slightly darker on hover */
-    }
+      .navbar .nav-links a:hover {
+        color: #555;
+        /* Slightly darker on hover */
+      }
 
-    /* Hero Section - IMAGE SIZE DOUBLED, TEXT UNCHANGED */
-    /* Hero Section - UPDATED FOR BOTTOM LOGO */
-.hero-section {
-    display: flex;
-    flex-direction: column; /* Stack main content and bottom logo vertically */
-    align-items: center; /* Center overall content horizontally */
-    justify-content: center;
-    background-color: #333; /* Dark background similar to Rebel Foods hero */
-    color: white;
-    padding: 20px 40px; /* Adjusted padding */
-    min-height: 550px; /* Increased min-height to accommodate larger image */
-    position: relative; /* Needed for potential future positioning, good practice */
-}
+      /* Hero Section - IMAGE SIZE DOUBLED, TEXT UNCHANGED */
+      /* Hero Section - UPDATED FOR BOTTOM LOGO */
+      .hero-section {
+        display: flex;
+        flex-direction: column;
+        /* Stack main content and bottom logo vertically */
+        align-items: center;
+        /* Center overall content horizontally */
+        justify-content: center;
+        background-color: #333;
+        /* Dark background similar to Rebel Foods hero */
+        color: white;
+        padding: 20px 40px;
+        /* Adjusted padding */
+        min-height: 550px;
+        /* Increased min-height to accommodate larger image */
+        position: relative;
+        /* Needed for potential future positioning, good practice */
+      }
 
-.hero-main-content {
-    display: flex; /* Keeps text and image side-by-side */
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    width: 100%; /* Take full width of parent hero-section */
-    margin-bottom: 10px; /* Space between main content and bottom logo */
-}
+      .hero-main-content {
+        display: flex;
+        /* Keeps text and image side-by-side */
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        width: 100%;
+        /* Take full width of parent hero-section */
+        margin-bottom: 10px;
+        /* Space between main content and bottom logo */
+      }
 
-.hero-content {
-    flex: 1;
-    max-width: 450px; /* Text content width remains the same */
-}
+      .hero-content {
+        flex: 1;
+        max-width: 450px;
+        /* Text content width remains the same */
+      }
 
-.hero-content h1 {
-    font-size: 2.5em; /* Text font size remains the same */
-    margin-bottom: 15px;
-    line-height: 1.2;
-}
+      .hero-content h1 {
+        font-size: 2.5em;
+        /* Text font size remains the same */
+        margin-bottom: 15px;
+        line-height: 1.2;
+      }
 
-.hero-content p {
-    font-size: 1em; /* Text font size remains the same */
-    line-height: 1.5;
-    margin-bottom: 25px;
-}
+      .hero-content p {
+        font-size: 1em;
+        /* Text font size remains the same */
+        line-height: 1.5;
+        margin-bottom: 25px;
+      }
 
-.hero-content .know-more-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #555;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
+      .hero-content .know-more-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #555;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
 
-.hero-content .know-more-btn:hover {
-    background-color: #777;
-}
+      .hero-content .know-more-btn:hover {
+        background-color: #777;
+      }
 
-.hero-image {
-    flex: 1.5; /* Increased flex-grow to give more space to the image */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+      .hero-image {
+        flex: 1.5;
+        /* Increased flex-grow to give more space to the image */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-.hero-image img {
-    max-width: 100%; /* Allows image to take up available space in its container */
-    max-height: 600px; /* Doubled from previous 350px to allow for larger image, adjust as needed */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.hero-bottom-logo {
-    width: 100%; /* Take full width to allow centering */
-    display: flex; /* Use flexbox to align child logos */
-    justify-content: center; /* Center logos horizontally */
-    align-items: center; /* Align logos vertically in case of different heights */
-    gap: 30px; /* Space between the two logos */
-
-}
-
-.centered-hero-logo {
-    max-width: 180px; /* Adjust logo size as needed, based on logoZT.jpg */
-    height: auto;
-}
-
-/* Also update the media query for smaller screens */
-@media (max-width: 992px) {
-    /* Hero Section adjustments for mobile */
-    .hero-section {
-        padding: 40px 20px; /* Adjust padding */
-    }
-    .hero-main-content {
-        flex-direction: column; /* Stack text and image vertically */
-        gap: 30px;
-        margin-bottom: 20px; /* Reduced margin */
-    }
-    .hero-content {
+      .hero-image img {
         max-width: 100%;
-        text-align: center;
-    }
-    .hero-image {
-        max-width: 90%;
-    }
-    .hero-image img {
-        max-height: 400px; /* Adjusted for smaller screens */
-    }
-    .hero-bottom-logo {
-        flex-direction: column; /* Stack logos vertically on small screens */
-        gap: 15px; /* Adjust gap for stacking */
-        padding-top: 15px; /* Adjust padding */
-    }
-    .centered-hero-logo {
-        max-width: 150px; /* Adjust logo size for smaller screens */
-    }
-    /* ... rest of existing media query rules ... */
-}
+        /* Allows image to take up available space in its container */
+        max-height: 600px;
+        /* Doubled from previous 350px to allow for larger image, adjust as needed */
+        height: auto;
+        /* Maintain aspect ratio */
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
 
-    /* Placeholder for other sections (similar to Rebel Foods options) */
-    .section-placeholder {
+      .hero-bottom-logo {
+        width: 100%;
+        /* Take full width to allow centering */
+        display: flex;
+        /* Use flexbox to align child logos */
+        justify-content: center;
+        /* Center logos horizontally */
+        align-items: center;
+        /* Align logos vertically in case of different heights */
+        gap: 30px;
+        /* Space between the two logos */
+      }
+
+      .centered-hero-logo {
+        max-width: 180px;
+        /* Adjust logo size as needed, based on logoZT.jpg */
+        height: auto;
+      }
+
+      /* Also update the media query for smaller screens */
+      @media (max-width: 992px) {
+
+        /* Hero Section adjustments for mobile */
+        .hero-section {
+          padding: 40px 20px;
+          /* Adjust padding */
+        }
+
+        .hero-main-content {
+          flex-direction: column;
+          /* Stack text and image vertically */
+          gap: 30px;
+          margin-bottom: 20px;
+          /* Reduced margin */
+        }
+
+        .hero-content {
+          max-width: 100%;
+          text-align: center;
+        }
+
+        .hero-image {
+          max-width: 90%;
+        }
+
+        .hero-image img {
+          max-height: 400px;
+          /* Adjusted for smaller screens */
+        }
+
+        .hero-bottom-logo {
+          flex-direction: column;
+          /* Stack logos vertically on small screens */
+          gap: 15px;
+          /* Adjust gap for stacking */
+          padding-top: 15px;
+          /* Adjust padding */
+        }
+
+        .centered-hero-logo {
+          max-width: 150px;
+          /* Adjust logo size for smaller screens */
+        }
+
+        /* ... rest of existing media query rules ... */
+      }
+
+      /* Placeholder for other sections (similar to Rebel Foods options) */
+      .section-placeholder {
         padding: 50px 30px;
         text-align: center;
         background-color: white;
         margin-bottom: 20px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
 
-.section-abtus {
+      .section-abtus {
         padding: 80px 50px;
-
         background-color: white;
         margin-bottom: 20px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
 
-    .section-placeholder h2 {
+      .section-placeholder h2 {
         font-size: 2.5em;
         margin-bottom: 30px;
         color: #333;
-    }
+      }
 
-    .section-grid {
+      .section-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 40px;
         max-width: 1200px;
         margin: 0 auto;
-    }
+      }
 
-    .grid-item {
+      .grid-item {
         padding: 30px;
         border: 1px solid #eee;
         border-radius: 8px;
         background-color: #f9f9f9;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         text-align: left;
-    }
+      }
 
-    .grid-item h3 {
+      .grid-item h3 {
         font-size: 1.8em;
         margin-bottom: 15px;
         color: #555;
-    }
+      }
 
-    .grid-item p {
+      .grid-item p {
         font-size: 1.1em;
         line-height: 1.6;
         color: #666;
-    }
+      }
 
-    /* Contact Section */
-    .contact-section {
+      /* Contact Section */
+      .contact-section {
         background-color: #333;
         color: white;
         padding: 80px 50px;
         text-align: center;
-    }
+      }
 
-    .contact-section h2 {
+      .contact-section h2 {
         font-size: 3em;
         margin-bottom: 40px;
         color: white;
-    }
+      }
 
-    .contact-info {
+      .contact-info {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 50px;
-    }
+      }
 
-    .contact-item {
+      .contact-item {
         text-align: left;
         max-width: 350px;
-    }
+      }
 
-    .contact-item h3 {
+      .contact-item h3 {
         font-size: 1.8em;
         margin-bottom: 15px;
-        color: #aaffaa; /* Light green for headings */
-    }
+        color: #aaffaa;
+        /* Light green for headings */
+      }
 
-    .contact-item p {
+      .contact-item p {
         font-size: 1.1em;
         line-height: 1.6;
-    }
+      }
 
-    .contact-item a {
+      .contact-item a {
         color: white;
         text-decoration: none;
-    }
+      }
 
-    .contact-item a:hover {
+      .contact-item a:hover {
         text-decoration: underline;
-    }
+      }
 
-    .google-map {
+      .google-map {
         width: 100%;
         max-width: 900px;
         height: 450px;
         border: 0;
         border-radius: 8px;
         overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-        margin: 0 auto; /* Center the map */
-    }
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        margin: 0 auto;
+        /* Center the map */
+      }
 
-    /* Footer */
-    .footer {
+      /* Footer */
+      .footer {
         background-color: #222;
         color: white;
         text-align: center;
         padding: 30px;
         font-size: 0.9em;
-    }
+      }
 
-    /* Responsive Adjustments */
-    @media (max-width: 992px) {
+      /* Responsive Adjustments */
+      @media (max-width: 992px) {
         .navbar {
-            flex-direction: column;
-            padding: 15px 20px;
+          flex-direction: column;
+          padding: 15px 20px;
         }
 
         .navbar .nav-links {
-            margin-top: 15px;
+          margin-top: 15px;
         }
 
         .navbar .nav-links a {
-            margin: 0 15px;
+          margin: 0 15px;
         }
 
         .contact-info {
-            flex-direction: column;
-            gap: 30px;
+          flex-direction: column;
+          gap: 30px;
         }
 
         .contact-item {
-            max-width: 100%;
-            text-align: center;
+          max-width: 100%;
+          text-align: center;
         }
 
         .section-placeholder {
-            padding: 50px 30px;
+          padding: 50px 30px;
         }
-    }
+      }
 
-    @media (max-width: 768px) {
+      @media (max-width: 768px) {
         .section-placeholder h2 {
-            font-size: 2em;
+          font-size: 2em;
         }
 
         .navbar .nav-links a {
-            display: block;
-            margin: 10px 0;
+          display: block;
+          margin: 10px 0;
         }
 
         .contact-section h2 {
-            font-size: 2.5em;
+          font-size: 2.5em;
         }
-    }
+      }
 
-    .contact-info-section {
-        gap: 20px; /* Space between the two phone numbers */
-        
-    }
+      .contact-info-section {
+        gap: 20px;
+        /* Space between the two phone numbers */
+      }
 
-    .contact-info-section .contact-number {
-        color: #555; /* Changed color to a darker grey */
-        text-decoration: none; /* Remove underline */
+      .contact-info-section .contact-number {
+        color: #555;
+        /* Changed color to a darker grey */
+        text-decoration: none;
+        /* Remove underline */
         transition: color 0.3s ease;
-        padding: 5px 0; /* Add a little vertical padding for hover effect */
-    }
+        padding: 5px 0;
+        /* Add a little vertical padding for hover effect */
+      }
 
-    .contact-info-section .contact-number:hover {
-        color: #000; /* Darker on hover */
-    }
-</style>
-</head>
-<body id='body'>
+      .contact-info-section .contact-number:hover {
+        color: #000;
+        /* Darker on hover */
+      }
+    </style>
+  </head>
+  <body id='body'>
     <header class="navbar">
-        <div class="logo">
-
-          <a href="#body"><img src="logoZT.jpg" alt="ZEROTABLES Logo"></a>
-            
-        </div>
-        <div class="navbar-section contact-info-section">
-          <i class="fas fa-phone-alt"></i>&nbsp;70264 00501 / 70264 00502
-        </div>
-        <nav class="nav-links">
-            <a href="#what-we-do">What We Do</a>
-            <a href="#who-we-are">Who We Are</a>
-            <a href="#contact-us">Contact Us</a>
-        </nav>
+      <div class="logo">
+        <a href="#body">
+          <img src="logoZT.jpg" alt="ZEROTABLES Logo">
+        </a>
+      </div>
+      <div class="navbar-section contact-info-section">
+        <i class="fas fa-phone-alt"></i>&nbsp;70264 00501 / 70264 00502
+      </div>
+      <nav class="nav-links">
+        <a href="#what-we-do">What We Do</a>
+        <a href="#who-we-are">Who We Are</a>
+        <a href="#contact-us">Contact Us</a>
+      </nav>
     </header>
-
     <section class="hero-section">
       <div class="hero-main-content">
-          <div class="hero-content">
-              <h1>The Sattvik Food Experience For All</h1>
-              <p>ZEROTABLES is a Bangalore-based culinary initiative rooted in the ethos of purity, health, and tradition. At its core, ZEROTABLES believes that food is not just nourishment but a sacred expression of culture and wellness. Founded with a mission to deliver wholesome vegetarian meals, ZEROTABLES has established itself as a trusted name in sattvik cuisine — meals prepared without onion, garlic, or any ingredients that disturb the harmony of body and mind.</p>
-          </div>
-          <div class="hero-image">
-              <img src="heroBanner.jpeg" alt="Delicious Sattvik Food">
-          </div>
+        <div class="hero-content">
+          <h1>The Sattvik Food Experience For All</h1>
+          <p>ZEROTABLES is a Bangalore-based culinary initiative rooted in the ethos of purity, health, and tradition. At its core, ZEROTABLES believes that food is not just nourishment but a sacred expression of culture and wellness. Founded with a mission to deliver wholesome vegetarian meals, ZEROTABLES has established itself as a trusted name in sattvik cuisine — meals prepared without onion, garlic, or any ingredients that disturb the harmony of body and mind.</p>
+        </div>
+        <div class="hero-image">
+          <img src="heroBanner.jpeg" alt="Delicious Sattvik Food">
+        </div>
       </div>
       <div class="hero-bottom-logo">
-        <a href="https://soulfulmeal.in"><img src="soulfulmeal_logo.png" class="centered-hero-logo"></a>
-        <a href="http://shri56bhog.in"><img src="shri56bhog_logo.png" class="centered-hero-logo"></a>
+        <a href="https://www.soulfulmeal.in">
+          <img src="soulfulmeal_logo.png" class="centered-hero-logo">
+        </a>
+        <a href="http://shri56bhog.in">
+          <img src="shri56bhog_logo.png" class="centered-hero-logo">
+        </a>
       </div>
-  </section>
-
+    </section>
     <section id="what-we-do" class="section-placeholder">
-        <h2>What We Do</h2>
-        <div class="section-grid">
-            <div class="grid-item">
-                <h3>Sattvik Meals</h3>
-                <p>We specialize in preparing pure Sattvik meals, free from onion and garlic, designed to nourish your body and promote peace, clarity, and mental balance.</p>
-            </div>
-            <div class="grid-item">
-                <h3>A Peaceful Lifestyle</h3>
-                <p>Our food is rooted in ancient traditions, crafted to support a sattvic lifestyle that fosters calmness, mindfulness, and harmony through every thoughtfully prepared dish.</p>
-            </div>
-            <div class="grid-item">
-                <h3>Spiritual Clarity</h3>
-                <p>By eliminating onion and garlic, our meals support spiritual clarity and inner peace, ideal for meditation, wellness, and those seeking holistic nourishment through food.</p>
-            </div>
+      <h2>What We Do</h2>
+      <div class="section-grid">
+        <div class="grid-item">
+          <h3>Sattvik Meals</h3>
+          <p>We specialize in preparing pure Sattvik meals, free from onion and garlic, designed to nourish your body and promote peace, clarity, and mental balance.</p>
         </div>
+        <div class="grid-item">
+          <h3>A Peaceful Lifestyle</h3>
+          <p>Our food is rooted in ancient traditions, crafted to support a sattvic lifestyle that fosters calmness, mindfulness, and harmony through every thoughtfully prepared dish.</p>
+        </div>
+        <div class="grid-item">
+          <h3>Spiritual Clarity</h3>
+          <p>By eliminating onion and garlic, our meals support spiritual clarity and inner peace, ideal for meditation, wellness, and those seeking holistic nourishment through food.</p>
+        </div>
+      </div>
     </section>
-
     <section id="who-we-are" class="section-placeholder">
-        <h2>Who We Are</h2>
-        <div class="section-grid">
-            <div class="grid-item">
-                <h3>Our Vision</h3>
-                <p>To be a trusted destination for wholesome, Sattvik vegetarian meals that nourish the body, calm the mind, and inspire a lifestyle rooted in purity, balance, and mindful living.</p>
-            </div>
-            <div class="grid-item">
-                <h3>Our Expertise</h3>
-                <p>Backed by 40 years of corporate experience, our team deeply understands evolving urban tastes, aligning culinary expertise with customer needs to craft meals that consistently delight and satisfy modern lifestyles..</p>
-            </div>
-            <div class="grid-item">
-                <h3>Our Values</h3>
-                <p>Rooted in purity, authenticity, and sustainability, we prioritize customer delight, community welfare, compassion, mindfulness, and ethical cooking—nurturing well-being through every thoughtfully prepared, wholesome and spiritually uplifting Sattvik meal.</p>
-            </div>
+      <h2>Who We Are</h2>
+      <div class="section-grid">
+        <div class="grid-item">
+          <h3>Our Vision</h3>
+          <p>To be a trusted destination for wholesome, Sattvik vegetarian meals that nourish the body, calm the mind, and inspire a lifestyle rooted in purity, balance, and mindful living.</p>
         </div>
+        <div class="grid-item">
+          <h3>Our Expertise</h3>
+          <p>Backed by 40 years of corporate experience, our team deeply understands evolving urban tastes, aligning culinary expertise with customer needs to craft meals that consistently delight and satisfy modern lifestyles..</p>
+        </div>
+        <div class="grid-item">
+          <h3>Our Values</h3>
+          <p>Rooted in purity, authenticity, and sustainability, we prioritize customer delight, community welfare, compassion, mindfulness, and ethical cooking—nurturing well-being through every thoughtfully prepared, wholesome and spiritually uplifting Sattvik meal.</p>
+        </div>
+      </div>
     </section>
-
-
     <section id="contact-us" class="contact-section">
-        <h2>Contact Us</h2>
-        <div class="contact-info">
-            <div class="contact-item">
-                <h3>Mobile</h3>
-                <p>70264 00501</p>
-                <p>70264 00502</p>
-            </div>
-            <div class="contact-item">
-                <h3>Email</h3>
-                <p><a href="mailto:zerotables.cloudkitchen@gmail.com">zerotables.cloudkitchen@gmail.com</a></p>
-            </div>
-            <div class="contact-item">
-                <h3>Address</h3>
-                <p>ZEROTABLES FOOD TECH LLP,</p>
-                <p>Nimbekaipura Huskuru Main Road,</p>
-                <p>Mandur Post, Bangalore-560049,</p>
-                <p>Karnataka, India</p>
-            </div>
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <h3>Mobile</h3>
+          <p>70264 00501</p>
+          <p>70264 00502</p>
         </div>
-        <iframe
-            class="google-map"
-            src="https://www.google.com/maps?q=ZEROTABLES+FOOD+TECH+LLP,+Nimbekaipura+Huskuru+Main+Road,+Mandur+Post,+Bangalore-560049,+Karnataka,+India&output=embed"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <div class="contact-item">
+          <h3>Email</h3>
+          <p>
+            <a href="mailto:zerotables.cloudkitchen@gmail.com">zerotables.cloudkitchen@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-item">
+          <h3>Address</h3>
+          <p>ZEROTABLES FOOD TECH LLP,</p>
+          <p>Nimbekaipura Huskuru Main Road,</p>
+          <p>Mandur Post, Bangalore-560049,</p>
+          <p>Karnataka, India</p>
+        </div>
+      </div>
+      <iframe class="google-map" src="https://www.google.com/maps?q=ZEROTABLES+FOOD+TECH+LLP,+Nimbekaipura+Huskuru+Main+Road,+Mandur+Post,+Bangalore-560049,+Karnataka,+India&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-
     <footer class="footer">
-        <p>&copy; 2025 ZEROTABLES FOOD TECH LLP. All rights reserved. | Only Sattvik</p>
+      <p>&copy; 2025 ZEROTABLES FOOD TECH LLP. All rights reserved. | Only Sattvik</p>
     </footer>
-
     <script>
-        // You can add JavaScript here for things like:
-        // - Smooth scrolling for navigation links
-        // - Mobile menu toggling (hamburger icon)
-        // - Any interactive elements or animations
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+      // You can add JavaScript here for things like:
+      // - Smooth scrolling for navigation links
+      // - Mobile menu toggling (hamburger icon)
+      // - Any interactive elements or animations
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
         });
-
-        // Example for a simple mobile menu toggle (requires adding a hamburger icon in HTML and more CSS)
-        // const mobileMenuButton = document.querySelector('.mobile-menu-button');
-        // const navLinks = document.querySelector('.nav-links');
-
-        // if (mobileMenuButton) {
-        //     mobileMenuButton.addEventListener('click', () => {
-        //         navLinks.classList.toggle('active');
-        //     });
-        // }
+      });
+      // Example for a simple mobile menu toggle (requires adding a hamburger icon in HTML and more CSS)
+      // const mobileMenuButton = document.querySelector('.mobile-menu-button');
+      // const navLinks = document.querySelector('.nav-links');
+      // if (mobileMenuButton) {
+      //     mobileMenuButton.addEventListener('click', () => {
+      //         navLinks.classList.toggle('active');
+      //     });
+      // }
     </script>
-</body>
+  </body>
 </html>
